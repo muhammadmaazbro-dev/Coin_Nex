@@ -1,0 +1,63 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8"><title>Coin_Nex - ReadMe</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.4;}
+h1{color:#a06a00;} h2{color:#a06a00;border-bottom:1px solid #ddd;padding-bottom:3px;}
+code,pre{background:#f4f4f4;font-family:Consolas,monospace;padding:1px 4px;border-radius:3px;}
+table{border-collapse:collapse;} td,th{border:1px solid #999;padding:5px 8px;}
+th{background:#eee;}
+</style>
+</head>
+<body>
+<h1>Coin_Nex · NextGen BudgetBee 🐝</h1>
+<p><b>Pure PHP 8.2 + MySQL student budget tracker — zero frameworks.</b></p>
+
+<h2>1. Install (XAMPP)</h2>
+<ol>
+<li>Copy <code>coin_nex/</code> into <code>C:\xampp\htdocs\</code>.</li>
+<li>Start Apache &amp; MySQL in XAMPP Control Panel.</li>
+<li>Import the database:<br>
+<code>C:\xampp\mysql\bin\mysql.exe -u root &lt; C:\xampp\htdocs\coin_nex\database\coin_nex.sql</code></li>
+<li>Open <code>http://localhost/coin_nex/</code></li>
+</ol>
+<p><i>If the site is served from a different URL, edit <code>BASE_URL</code> in <code>config/config.php</code>.</i></p>
+
+<h2>2. Demo accounts</h2>
+<table>
+<tr><th>Role</th><th>Email</th><th>Password</th><th>Data</th></tr>
+<tr><td>Admin</td><td>admin@coin-nex.dev</td><td>Admin@123</td><td>Full admin moderation</td></tr>
+<tr><td>Student</td><td>umar@gmail.com</td><td>UmarPass123</td><td>87 transactions (Apr–Sep 2026), budgets, tips, insights</td></tr>
+</table>
+
+<h2>3. Features</h2>
+<ul>
+<li>Register / login / logout / forgot &amp; reset password (bcrypt)</li>
+<li>Categories (system defaults + personal), transactions CRUD, filters, search</li>
+<li>Recurring income/expenses (weekly/monthly, idempotent)</li>
+<li>CSV import with AI auto-categorization + template + two-step confirm</li>
+<li>Dashboard: 6-month charts, category donut, AI highlights, budget progress</li>
+<li>Budgets with 80%/100% alerts (deduplicated notifications)</li>
+<li>Reports: monthly summaries, category shares, CSV &amp; hand-written PDF export</li>
+<li>Saving Tips engine (bookmark/dismiss/tabs)</li>
+<li>AI Insights + offline chatbot "Bee"</li>
+<li>Admin panel: stats, charts, manage/ban/promote/delete users</li>
+<li>Dark/light themes, font scaling, keyboard shortcuts, print styles, sitemap</li>
+</ul>
+
+<h2>4. Hosting (optional extra)</h2>
+<ul>
+<li>Upload folder, create a utf8mb4 database, import the .sql via phpMyAdmin.</li>
+<li>Set DB_HOST/DB_NAME/DB_USER/DB_PASS and BASE_URL in <code>config/config.php</code>.</li>
+</ul>
+
+<h2>5. Deliverables in this package</h2>
+<ul>
+<li><code>database/coin_nex.sql</code> — schema + demo data (creates DB itself)</li>
+<li><code>README.md</code> — full docs</li>
+<li><code>docs/project-report.md</code> — report</li>
+<li><code>docs/ER-Diagram.md</code> — ER diagram</li>
+</ul>
+</body>
+</html>
